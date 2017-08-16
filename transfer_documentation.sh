@@ -1,4 +1,12 @@
 #! /bin/bash
+
+USAGE='Usage: transfer_documentation.sh <T1X/T2X/T3X file> <output_file>'
+
+if [ $# != 2 ] ; then
+    echo $USAGE
+    exit 1;
+fi
+
 filename_in="$1"
 filename_out="$2"
 > $filename_out
